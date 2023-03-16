@@ -43,7 +43,7 @@ public class StatsService {
         int average = averageAmount(sales);
         int belowAverage = 0;
         for (int i = 0; i < sales.length; i++) {
-            if (sales[i] > average) {
+            if (sales[i] < average) {
                 belowAverage = belowAverage + 1;
             }
         }
